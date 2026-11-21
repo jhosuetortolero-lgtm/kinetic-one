@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 28" width="232" height="56" role="img" aria-label="KINETIC">
+  <defs>
+    <clipPath id="m"><rect x="0" y="2" width="22" height="24"/></clipPath>
+    <clipPath id="w"><rect x="0" y="0" width="74" height="14"/></clipPath>
+  </defs>
+  <g color="#F5F5F7">
+    <g fill="none" stroke="currentColor" stroke-width="2.2" clip-path="url(#m)">
+      <path d="M3 2V26M3 14L19.99 1.66M3 14L19.99 26.34"/>
+    </g>
+    <g fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M9.29 10.93A7 7 0 0 1 9.29 17.07M14.24 8.52A12.5 12.5 0 0 1 14.24 19.48"/>
+    </g>
+    <g transform="translate(36 7)">
+      <g fill="none" stroke="currentColor" stroke-width="2" clip-path="url(#w)">
+        <path d="M1 0V14M1.6 7L10.6 -1.2M1.6 7L10.6 15.2M15 0V14M21 0V14M29 0V14M20.5 -0.875L29.5 14.875M35 0V14M34 1H42M34 7H41M34 13H42M46 1H55M50.5 0V14M60 0V14M72.39 2.4A4.5 6 0 1 0 72.39 11.6"/>
+      </g>
+    </g>
+  </g>
+</svg>

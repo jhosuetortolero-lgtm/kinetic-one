@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="en" class="no-js is-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>KINETIC ONE — Acoustic Engineering, Copenhagen</title>
+  <meta name="description" content="KINETIC ONE. Reference-grade wireless headphones with 40 mm titanium drivers, Neural ANC and a grade-5 titanium frame. Designed in Copenhagen.">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://jhosuetortolero-lgtm.github.io/kinetic-one/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KINETIC Acoustic Engineering">
+  <meta property="og:title" content="KINETIC ONE — Silence, sculpted.">
+  <meta property="og:description" content="Reference-grade wireless headphones with 40 mm titanium drivers and Neural ANC. Designed in Copenhagen.">
+  <meta property="og:url" content="https://jhosuetortolero-lgtm.github.io/kinetic-one/">
+  <meta property="og:image" content="https://jhosuetortolero-lgtm.github.io/kinetic-one/assets/readme/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="author" content="Dev. Jhosue Tortolero, Jhosuelabs">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231D1D1F'/%3E%3Cg fill='none' stroke='%23fff' stroke-width='2.2' transform='translate(6 2)'%3E%3Cpath d='M3 2v24M3 14 19 2.3M3 14l16 11.7'/%3E%3Cpath stroke-width='1.5' d='M9.3 10.9a7 7 0 0 1 0 6.2M14.2 8.5a12.5 12.5 0 0 1 0 11'/%3E%3C/g%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./public/frames-hero/frame_0001.webp" type="image/webp">
+
+  <!-- Critical CSS: styles the preloader before Tailwind compiles. -->
+  <style>
+    html, body { margin: 0; background: #FFFFFF; }
+    html.is-loading { overflow: hidden; }
+    .preloader { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: #FFFFFF; color: #1D1D1F; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    .preloader__inner { display: flex; flex-direction: column; align-items: center; gap: 32px; }
+    .preloader__mark { display: block; width: 34px; height: 44px; color: #1D1D1F; }
+    .preloader__meter { display: flex; align-items: center; gap: 16px; }
+    .preloader__track { width: 160px; height: 2px; background: rgba(0, 0, 0, 0.08); overflow: hidden; }
+    .preloader__fill { height: 100%; background: #0066CC; transform: scaleX(0); transform-origin: 0 50%; }
+    .preloader__count { min-width: 4.5ch; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; color: #6E6E73; font-variant-numeric: tabular-nums; text-align: right; }
+    .preloader__label { position: absolute; left: 0; right: 0; bottom: 32px; margin: 0; text-align: center; font-size: 12px; letter-spacing: 0.02em; color: #6E6E73; }
+  </style>
+  <noscript><style>.preloader { display: none !important; } html.is-loading { overflow: auto !important; }</style></noscript>
+
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mist: '#F5F5F7',
+            graphite: '#1D1D1F',
+            'graphite-2': '#2C2C2E',
+            cobalt: '#0066CC',
+            ink: '#1D1D1F',
+            muted: '#6E6E73',
+            dim: '#86868B',
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          transitionTimingFunction: { inertia: 'cubic-bezier(0.16, 1, 0.3, 1)' },
+        },
+      },
+    };
+  </script>
+
+  <style type="text/tailwindcss">
+    @layer base {
+      :root {
+        --ease: cubic-bezier(0.16, 1, 0.3, 1);
+        --hairline: rgba(0, 0, 0, 0.08);
+        --hairline-dark: rgba(255, 255, 255, 0.1);
+        --gutter: clamp(20px, 4vw, 64px);
+        --nav-h: 56px;
+      }
+      [hidden] { display: none !important; }
+      html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; -webkit-tap-highlight-color: transparent; }
+      body { background: #FFFFFF; color: #1D1D1F; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 17px; line-height: 1.5; overflow-x: clip; }
+      ::selection { background: rgba(0, 102, 204, 0.16); color: #1D1D1F; }
+      :focus { outline: none; }
+      :focus-visible { outline: 2px solid #0066CC; outline-offset: 3px; }
+      .on-dark :focus-visible { outline-color: #FFFFFF; }
+
+      /* Lenis */
+      html.lenis, html.lenis body { height: auto; }
+      .lenis.lenis-smooth { scroll-behavior: auto !important; }
+      .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+      .lenis.lenis-stopped, html.scroll-locked { overflow: hidden; }
+    }
+
+    @layer components {
+      /* ---------- Primitives ---------- */
+      .wrap { width: 100%; max-width: 1440px; margin-inline: auto; padding-inline: var(--gutter); }
+      .display { font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif; font-weight: 500; letter-spacing: -0.03em; line-height: 0.95; }
+      .tnum { font-variant-numeric: tabular-nums; }
+      .micro-label { font-size: 12px; font-weight: 500; line-height: 1; letter-spacing: 0.08em; color: #6E6E73; }
+      .section { padding-block: clamp(112px, 14vw, 220px); }
+      .section--mist { background: #F5F5F7; }
+      /* Two white sections in a row share one gap instead of stacking two. */
+      .section:not(.section--mist) + .section:not(.section--mist) { padding-top: 0; }
+      .flag { display: block; flex: none; width: auto; height: 10px; }
+
+      .section-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 20px; row-gap: 24px; align-items: end; margin-bottom: clamp(48px, 6vw, 88px); }
+      .section-head h2 { grid-column: 1 / -1; font-size: clamp(40px, 5.6vw, 92px); }
+      .section-head p { grid-column: 1 / -1; max-width: 38ch; font-size: 17px; line-height: 1.55; color: #6E6E73; }
+      @media (min-width: 1024px) {
+        .section-head h2 { grid-column: 1 / span 7; }
+        .section-head p { grid-column: 9 / span 4; }
+      }
+      .sub-title { margin-bottom: 20px; font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-weight: 500; font-size: 24px; line-height: 1.1; letter-spacing: -0.02em; }
+
+      .skip-link { position: fixed; top: 12px; left: 16px; z-index: 120; padding: 10px 16px; border-radius: 999px; background: #1D1D1F; color: #FFFFFF; font-size: 14px; transform: translateY(-200%); transition: transform 0.6s var(--ease); }
+      .skip-link:focus-visible { transform: none; }
+
+      .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 22px; border-radius: 999px; font-size: 15px; font-weight: 500; letter-spacing: -0.01em; white-space: nowrap; cursor: pointer; -webkit-user-select: none; user-select: none; transition: transform 0.6s var(--ease), background-color 0.35s var(--ease), color 0.35s var(--ease), box-shadow 0.35s var(--ease); }
+      .btn:active { transform: scale(0.98); transition-duration: 0.12s; }
+      .btn--sm { height: 34px; padding: 0 16px; font-size: 13px; }
+      .btn--lg { height: 52px; padding: 0 28px; font-size: 16px; }
+      .btn--dark { background: #1D1D1F; color: #FFFFFF; }
+      .btn--light { background: #FFFFFF; color: #1D1D1F; }
+      .btn--ghost { background: transparent; color: #1D1D1F; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.14); }
+      @media (hover: hover) {
+        .btn--dark:hover { background: #000000; }
+        .btn--light:hover { background: #E8E8ED; }
+        .btn--ghost:hover { box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.36); }
+      }
+
+      /* ---------- Navigation ---------- */
+      .nav { position: fixed; inset: 0 0 auto 0; z-index: 50; height: var(--nav-h); color: #1D1D1F; background: rgba(255, 255, 255, 0.72); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--hairline); transition: background-color 0.6s var(--ease), border-color 0.6s var(--ease), color 0.6s var(--ease); }
+      .nav__bar { height: 100%; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; }
+      .nav__logo { display: inline-flex; align-items: center; gap: 10px; justify-self: start; color: inherit; }
+      .nav__links { display: none; gap: 32px; }
+      .nav__links a { font-size: 13px; color: #6E6E73; transition: color 0.35s var(--ease); }
+      .nav__links a.is-active { color: #1D1D1F; }
+      .nav__actions { grid-column: 3; justify-self: end; display: flex; align-items: center; gap: 6px; }
+      .nav__menu-btn { position: relative; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 999px; color: inherit; transition: background-color 0.3s var(--ease), transform 0.6s var(--ease); }
+      .nav__menu-btn:active { transform: scale(0.98); }
+      .nav__menu-btn span { position: absolute; left: 11px; width: 14px; height: 1.5px; background: currentColor; transition: transform 0.6s var(--ease); }
+      .nav__menu-btn span:first-child { transform: translateY(-3px); }
+      .nav__menu-btn span:last-child { transform: translateY(3px); }
+      .nav__menu-btn[aria-expanded="true"] span:first-child { transform: rotate(45deg); }
+      .nav__menu-btn[aria-expanded="true"] span:last-child { transform: rotate(-45deg); }
+      @media (hover: hover) {
+        .nav__links a:hover { color: #1D1D1F; }
+        .nav__menu-btn:hover { background: rgba(0, 0, 0, 0.05); }
+      }
+      @media (min-width: 1024px) {
+        .nav__links { display: flex; }
+        .nav__menu-btn { display: none; }
+      }
+      @media (max-width: 359.98px) { .nav__word { display: none; } }
+      .nav.is-dark { color: #F5F5F7; background: rgba(29, 29, 31, 0.62); border-color: rgba(255, 255, 255, 0.08); }
+      .nav.is-dark .nav__links a { color: #A1A1A6; }
+      .nav.is-dark .nav__links a.is-active { color: #FFFFFF; }
+      .nav.is-dark .btn--dark { background: #FFFFFF; color: #1D1D1F; }
+      @media (hover: hover) {
+        .nav.is-dark .nav__links a:hover { color: #FFFFFF; }
+        .nav.is-dark .btn--dark:hover { background: #E8E8ED; }
+        .nav.is-dark .nav__menu-btn:hover { background: rgba(255, 255, 255, 0.1); }
+      }
+      /* Open mobile menu always reads as a light sheet, even over the dark sections. */
+      .nav.menu-open { color: #1D1D1F; background: #FFFFFF; border-color: var(--hairline); }
+      .nav.menu-open .btn--dark { background: #1D1D1F; color: #FFFFFF; }
+
+      .menu { position: fixed; top: var(--nav-h); left: 0; right: 0; z-index: 49; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; height: calc(100vh - var(--nav-h)); height: calc(100dvh - var(--nav-h)); padding: 8px 0 calc(24px + env(safe-area-inset-bottom)); overflow-y: auto; overscroll-behavior: contain; background: #FFFFFF; }
+      .menu__links a { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid var(--hairline); font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-weight: 500; font-size: clamp(28px, 7vw, 40px); line-height: 1.1; letter-spacing: -0.03em; color: #1D1D1F; }
+      .menu__links a.is-active::after { content: ""; width: 8px; height: 8px; border-radius: 999px; background: #0066CC; }
+      .menu__foot { display: grid; gap: 16px; font-size: 13px; color: #6E6E73; }
+      @media (min-width: 1024px) { .menu { display: none !important; } }
+
+      /* ---------- Hero (pinned scrub) ---------- */
+      .hero { position: relative; height: 100vh; overflow: hidden; background: #FFFFFF; }
+      /* The source frames sit on a light grey sweep (#E2E2E2–#F1F1F1).
+         This lift maps that sweep onto pure white so canvas and page merge. */
+      .hero__canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; filter: contrast(1.1) brightness(1.08); }
+
+      .story { position: absolute; inset: 0; z-index: 2; display: grid; padding: calc(var(--nav-h) + 6vh) var(--gutter) 10vh; pointer-events: none; }
+      .story__inner { pointer-events: auto; }
+      .story--1 .story__inner { align-self: end; justify-self: start; }
+      .story--2 .story__inner { align-self: center; justify-self: start; max-width: min(28vw, 420px); }
+      .story--3 .story__inner { align-self: center; justify-self: end; max-width: min(28vw, 420px); }
+      .story__title { margin-top: 22px; font-size: clamp(44px, 5.4vw, 112px); line-height: 0.92; }
+      .story__sub { margin-top: 22px; max-width: 26ch; font-size: 18px; line-height: 1.45; color: #6E6E73; }
+      .story__heading { font-size: clamp(26px, 2.4vw, 40px); line-height: 1.02; }
+      .story__body { margin-top: 16px; max-width: 30ch; font-size: 17px; line-height: 1.5; color: #6E6E73; }
+      .reveal-line { display: block; overflow: hidden; padding-bottom: 0.08em; margin-bottom: -0.08em; }
+      .reveal-line > span { display: block; }
+
+      .hero__cue { position: absolute; right: var(--gutter); bottom: 10vh; z-index: 2; display: flex; align-items: center; gap: 12px; font-size: 12px; letter-spacing: 0.02em; color: #6E6E73; pointer-events: none; }
+      .hero__cue i { position: relative; width: 1px; height: 36px; overflow: hidden; background: rgba(0, 0, 0, 0.12); }
+      .hero__cue i::after { content: ""; position: absolute; top: 0; left: 0; width: 1px; height: 12px; background: #1D1D1F; animation: cue 2.4s var(--ease) infinite; }
+      @keyframes cue { from { transform: translateY(-12px); } to { transform: translateY(36px); } }
+
+      /* ---------- Closing (pinned scrub) ---------- */
+      .closing { position: relative; height: 100vh; overflow: hidden; background: #1D1D1F; color: #FFFFFF; }
+      .closing__canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+      .closing__shade { position: absolute; inset: 0; z-index: 1; pointer-events: none; background:
+        linear-gradient(to bottom, rgba(29, 29, 31, 0.55) 0%, rgba(29, 29, 31, 0) 26%),
+        linear-gradient(to top, #1D1D1F 0%, rgba(29, 29, 31, 0.72) 16%, rgba(29, 29, 31, 0) 48%),
+        linear-gradient(to right, rgba(29, 29, 31, 0.5) 0%, rgba(29, 29, 31, 0) 44%); }
+      .story--a .story__inner { align-self: start; justify-self: start; margin-top: 14vh; max-width: 40rem; }
+      .story--b .story__inner { align-self: end; justify-self: center; text-align: center; }
+      .closing__heading { font-size: clamp(32px, 4.2vw, 76px); line-height: 0.98; color: #FFFFFF; }
+      .closing__sub { margin-top: 18px; max-width: 30ch; font-size: 18px; line-height: 1.45; color: rgba(255, 255, 255, 0.72); }
+      .closing__title { font-size: clamp(56px, 9vw, 168px); line-height: 0.9; color: #FFFFFF; }
+
+      /* Narrow / portrait: text sits under the product, never on it. */
+      @media not all and (min-width: 640px) and (min-aspect-ratio: 23/20) {
+        .story { padding-bottom: 9vh; padding-bottom: calc(7svh + 100lvh - 100svh); }
+        .story .story__inner { align-self: end; justify-self: start; max-width: 34rem; margin-top: 0; }
+        .story--b .story__inner { justify-self: center; }
+        .story__title { font-size: clamp(40px, 11vw, 64px); }
+        .story__sub, .closing__sub { font-size: 16px; }
+        .hero__cue { display: none; }
+      }
+
+      /* ---------- Neural ANC ---------- */
+      .anc { margin-top: clamp(56px, 7vw, 104px); padding: clamp(20px, 3vw, 40px); border-radius: 1.75rem; background: #F5F5F7; }
+      .anc__head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; padding-bottom: 24px; border-bottom: 1px solid var(--hairline); }
+      .anc__readouts { display: flex; flex-wrap: wrap; gap: 10px 32px; font-size: 13px; line-height: 1.3; font-variant-numeric: tabular-nums; }
+      .anc__readouts > div { display: flex; gap: 6px; }
+      .anc__readouts dt { color: #6E6E73; }
+      .anc__readouts dd { min-width: 5.5ch; font-weight: 500; color: #1D1D1F; transition: color 0.6s var(--ease); }
+      .anc[data-state="on"] .anc__att dd { color: #0066CC; }
+      .anc__control { display: flex; align-items: center; gap: 14px; font-size: 13px; line-height: 1.3; }
+      .anc__opt { color: #6E6E73; cursor: pointer; -webkit-user-select: none; user-select: none; transition: color 0.5s var(--ease); }
+      .anc[data-state="off"] .anc__opt[data-set="off"], .anc[data-state="on"] .anc__opt[data-set="on"] { color: #1D1D1F; }
+      .anc__plot { position: relative; height: clamp(240px, 30vw, 420px); margin-top: 8px; }
+      .anc__plot canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+      .anc__foot { display: flex; justify-content: space-between; gap: 16px; padding-top: 14px; border-top: 1px solid var(--hairline); font-size: 11px; color: #6E6E73; font-variant-numeric: tabular-nums; }
+      @media (max-width: 560px) {
+        .anc__control { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; }
+        .anc__opt[data-set="off"] { grid-area: 1 / 1; }
+        .anc__opt[data-set="on"] { grid-area: 2 / 1; }
+        .anc__control .switch { grid-area: 1 / 2 / 3 / 3; }
+        .anc__foot span:nth-child(2) { display: none; }
+      }
+
+      .switch { position: relative; flex: none; width: 52px; height: 32px; border-radius: 999px; background: #D2D2D7; cursor: pointer; transition: background-color 0.5s var(--ease); }
+      .switch__thumb { position: absolute; top: 2px; left: 2px; width: 28px; height: 28px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(0, 0, 0, 0.16), 0 0 0 0.5px rgba(0, 0, 0, 0.04); transition: transform 0.5s var(--ease), width 0.3s var(--ease); }
+      .switch[aria-checked="true"] { background: #0066CC; }
+      .switch[aria-checked="true"] .switch__thumb { transform: translateX(20px); }
+      .switch:active .switch__thumb { width: 34px; }
+      .switch[aria-checked="true"]:active .switch__thumb { transform: translateX(14px); }
+
+      /* ---------- Bento ---------- */
+      .card { position: relative; display: flex; flex-direction: column; gap: 32px; min-height: 380px; padding: clamp(24px, 3.2vw, 48px); overflow: hidden; border-radius: 1.5rem; background: #F5F5F7; }
+      @media (min-width: 768px) { .card { min-height: 460px; } }
+      @media (min-width: 1024px) { .card { min-height: 520px; } }
+      .card__figure { font-size: clamp(48px, 6.4vw, 112px); line-height: 0.9; font-variant-numeric: tabular-nums; }
+      .card__unit { margin-left: 0.22em; font-size: 0.3em; letter-spacing: 0.02em; color: #6E6E73; }
+      .card__unit--pre { margin-left: 0; margin-right: 0.22em; }
+      .card__viz { flex: 1; display: flex; align-items: center; }
+      .card__text { max-width: 36ch; font-size: 17px; line-height: 1.5; color: #6E6E73; }
+      .card__text strong { font-weight: 500; color: #1D1D1F; }
+
+      .battery { width: 100%; }
+      .battery__track { position: relative; height: 2px; background: rgba(0, 0, 0, 0.1); }
+      .battery__fill { position: absolute; inset: 0; background: #1D1D1F; }
+      .battery__quick { position: absolute; top: -1px; left: 0; width: 6.6667%; height: 4px; background: #0066CC; }
+      .battery__scale { position: relative; height: 30px; margin-top: 10px; font-size: 12px; color: #6E6E73; font-variant-numeric: tabular-nums; }
+      .battery__scale span { position: absolute; top: 12px; white-space: nowrap; transform: translateX(-50%); }
+      .battery__scale span::before { content: ""; position: absolute; top: -12px; left: 50%; width: 1px; height: 6px; background: rgba(0, 0, 0, 0.22); }
+      .battery__scale span:first-child { transform: none; }
+      .battery__scale span:first-child::before { left: 0; }
+      .battery__scale span:last-child { transform: translateX(-100%); }
+      .battery__scale span:last-child::before { left: auto; right: 0; }
+      .battery__legend { display: flex; align-items: center; gap: 10px; margin-top: 14px; font-size: 13px; color: #6E6E73; }
+      .battery__legend i { width: 16px; height: 4px; background: #0066CC; }
+
+      .mass { width: 100%; }
+      .mass__bar { display: flex; gap: 3px; height: 10px; }
+      .mass__bar span { width: var(--w); border-radius: 2px; background: var(--c); }
+      .mass__legend { margin-top: 20px; font-size: 14px; font-variant-numeric: tabular-nums; }
+      .mass__legend > div { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 11px 0; border-top: 1px solid var(--hairline); }
+      .mass__legend dt { display: flex; align-items: center; gap: 10px; color: #6E6E73; }
+      .mass__legend dt::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--c); }
+      .mass__legend dd { font-weight: 500; color: #1D1D1F; }
+
+      .dial { display: block; width: 100%; max-width: 250px; margin-inline: auto; overflow: visible; }
+      .dial__minor { fill: none; stroke: rgba(0, 0, 0, 0.18); stroke-width: 1; }
+      .dial__major { fill: none; stroke: rgba(0, 0, 0, 0.55); stroke-width: 1.25; }
+      .dial__ring { fill: none; stroke: rgba(0, 0, 0, 0.1); stroke-width: 1; }
+      .dial__beam { stroke: #0066CC; stroke-width: 1; opacity: 0.45; }
+      .dial__source { fill: #0066CC; }
+      .dial__head { fill: #FFFFFF; stroke: rgba(0, 0, 0, 0.22); stroke-width: 1; }
+      .dial__nose { fill: none; stroke: rgba(0, 0, 0, 0.35); stroke-width: 1; }
+      .dial__label { font: 500 8px Inter, ui-sans-serif, sans-serif; fill: #6E6E73; text-anchor: middle; dominant-baseline: middle; font-variant-numeric: tabular-nums; }
+      .dial__readout { margin-top: 18px; text-align: center; font-size: 13px; color: #6E6E73; font-variant-numeric: tabular-nums; }
+      .dial__readout span { color: #1D1D1F; font-weight: 500; }
+
+      .sampling { display: block; width: 100%; height: 150px; }
+      .sampling__axis { stroke: rgba(0, 0, 0, 0.1); stroke-width: 1; vector-effect: non-scaling-stroke; }
+      .sampling__smooth { fill: none; stroke: rgba(0, 0, 0, 0.32); stroke-width: 1; stroke-dasharray: 3 4; vector-effect: non-scaling-stroke; }
+      .sampling__steps { fill: none; stroke: #1D1D1F; stroke-width: 1.5; stroke-linejoin: miter; vector-effect: non-scaling-stroke; }
+      .sampling__key { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 16px; font-size: 13px; color: #6E6E73; }
+      .sampling__key span { display: inline-flex; align-items: center; gap: 10px; }
+      .sampling__key i { width: 18px; height: 0; border-top: 1.5px solid #1D1D1F; }
+      .sampling__key i.is-source { border-top: 1px dashed rgba(0, 0, 0, 0.35); }
+
+      /* ---------- Footer ---------- */
+      .footer { background: #1D1D1F; color: #F5F5F7; }
+      .specs { padding-top: clamp(96px, 12vw, 176px); padding-bottom: clamp(72px, 8vw, 120px); }
+      .specs__list { display: grid; column-gap: 48px; font-variant-numeric: tabular-nums; }
+      @media (min-width: 768px) { .specs__list { grid-template-columns: 1fr 1fr; } }
+      .specs__row { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr); gap: 16px; padding: 18px 0; border-top: 1px solid var(--hairline-dark); font-size: 15px; line-height: 1.45; }
+      .specs__row dt { color: #86868B; }
+      .specs__row dd { color: #F5F5F7; }
+      .footer__meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 24px; padding-block: 48px; border-top: 1px solid var(--hairline-dark); font-size: 14px; line-height: 1.6; color: #86868B; }
+      .footer__meta > :first-child, .footer__meta > address { grid-column: 1 / -1; }
+      @media (min-width: 1024px) {
+        .footer__meta { grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr)); }
+        .footer__meta > :first-child, .footer__meta > address { grid-column: auto; }
+      }
+      .footer__head { margin-bottom: 12px; font-size: 13px; font-weight: 500; color: #F5F5F7; }
+      .footer__links { display: grid; gap: 6px; }
+      .footer__links a, .footer__links button { color: #A1A1A6; text-align: left; transition: color 0.35s var(--ease); }
+      @media (hover: hover) { .footer__links a:hover, .footer__links button:hover { color: #FFFFFF; } }
+
+      /* ---------- Overview ---------- */
+      .lead { max-width: 24ch; font-size: clamp(30px, 3.8vw, 60px); line-height: 1.06; letter-spacing: -0.03em; }
+      .overview__p { max-width: 38ch; font-size: 17px; line-height: 1.55; color: #6E6E73; }
+      .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 20px; margin-top: clamp(64px, 8vw, 120px); }
+      @media (min-width: 1024px) { .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+      .stat { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: 12px; padding-top: 20px; border-top: 1px solid var(--hairline); }
+      .stat dd { font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-weight: 500; font-size: clamp(36px, 4.2vw, 64px); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .stat dd span { margin-left: 0.12em; font-size: 0.4em; letter-spacing: 0; color: #6E6E73; }
+      .stat dt { font-size: 14px; line-height: 1.4; color: #6E6E73; }
+
+      /* ---------- Sound (frequency response) ---------- */
+      .fr__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; margin-bottom: 32px; }
+      .segmented { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); min-width: 340px; padding: 4px; border-radius: 999px; background: #F5F5F7; }
+      .segmented button { position: relative; z-index: 1; height: 38px; padding: 0 18px; border-radius: 999px; font-size: 14px; font-weight: 500; color: #6E6E73; transition: color 0.4s var(--ease), transform 0.6s var(--ease); }
+      .segmented button:active { transform: scale(0.98); }
+      .segmented button[aria-checked="true"] { color: #1D1D1F; }
+      .segmented__thumb { position: absolute; top: 4px; bottom: 4px; left: 4px; width: calc((100% - 8px) / 3); border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 0 0 0.5px rgba(0, 0, 0, 0.06); transform: translateX(calc(var(--i, 0) * 100%)); transition: transform 0.6s var(--ease); }
+      .fr__desc { max-width: 46ch; font-size: 15px; line-height: 1.5; color: #6E6E73; }
+      .fr__chart { display: grid; grid-template-columns: 44px minmax(0, 1fr); }
+      .fr__y { position: relative; }
+      .fr__y span { position: absolute; right: 12px; transform: translateY(-50%); font-size: 11px; color: #6E6E73; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .fr__plot { position: relative; height: clamp(220px, 30vw, 380px); }
+      .fr__plot svg { position: absolute; inset: 0; display: block; width: 100%; height: 100%; overflow: visible; }
+      .fr__minor { fill: none; stroke: rgba(0, 0, 0, 0.05); stroke-width: 1; vector-effect: non-scaling-stroke; }
+      .fr__major { fill: none; stroke: rgba(0, 0, 0, 0.11); stroke-width: 1; vector-effect: non-scaling-stroke; }
+      .fr__axis { fill: none; stroke: rgba(0, 0, 0, 0.3); stroke-width: 1; vector-effect: non-scaling-stroke; }
+      .fr__band { fill: rgba(0, 0, 0, 0.045); }
+      .fr__curve { fill: none; stroke: #0066CC; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+      .fr__x { position: relative; height: 28px; margin-top: 10px; }
+      .fr__x span { position: absolute; top: 0; transform: translateX(-50%); font-size: 11px; color: #6E6E73; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .fr__x span:first-child { transform: none; }
+      .fr__x span:last-child { transform: translateX(-100%); }
+      .fr__foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--hairline); font-size: 13px; color: #6E6E73; }
+      .fr__readouts { display: flex; flex-wrap: wrap; gap: 8px 32px; font-variant-numeric: tabular-nums; }
+      .fr__readouts > div { display: flex; gap: 6px; }
+      .fr__readouts dd { min-width: 6ch; font-weight: 500; color: #1D1D1F; }
+      .fr__legend { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+      .fr__legend span { display: inline-flex; align-items: center; gap: 10px; }
+      .fr__legend i { width: 18px; height: 2px; background: #0066CC; }
+      .fr__legend i.is-band { height: 10px; background: rgba(0, 0, 0, 0.07); }
+      @media (max-width: 639.98px) {
+        .segmented { min-width: 0; width: 100%; }
+        .fr__x .is-minor { display: none; }
+        .fr__chart { grid-template-columns: 36px minmax(0, 1fr); }
+        .fr__y span { right: 8px; }
+      }
+
+      /* ---------- Design & materials ---------- */
+      .design__media img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 60% 55%; border-radius: 1.5rem; background: #1D1D1F; }
+      .design__media figcaption { margin-top: 14px; font-size: 13px; line-height: 1.5; color: #6E6E73; }
+      @media (min-width: 640px) and (max-width: 1023.98px) { .design__media img { aspect-ratio: 16 / 10; object-position: 58% 55%; } }
+      .design__title { font-size: clamp(36px, 4.4vw, 72px); }
+      .design__lede { margin-top: 24px; max-width: 40ch; font-size: 17px; line-height: 1.55; color: #6E6E73; }
+      .materials { margin-top: 40px; }
+      .materials > div { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 20px; padding: 18px 0; border-top: 1px solid rgba(0, 0, 0, 0.1); font-size: 15px; line-height: 1.55; }
+      .materials dt { font-weight: 500; color: #1D1D1F; }
+      .materials dd { color: #6E6E73; }
+      @media (max-width: 479.98px) { .materials > div { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+      .finish-row { margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(0, 0, 0, 0.1); }
+      .finish-row p { margin-bottom: 14px; font-size: 13px; color: #6E6E73; }
+      .finish-row__items { display: flex; flex-wrap: wrap; gap: 8px; }
+      .finish-chip { display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 18px 0 8px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 500; color: #1D1D1F; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08); transition: box-shadow 0.4s var(--ease), transform 0.6s var(--ease); }
+      .finish-chip:active { transform: scale(0.98); }
+      .finish-chip .swatch__chip { width: 28px; height: 28px; }
+      @media (hover: hover) { .finish-chip:hover { box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3); } }
+
+      /* ---------- Everyday ---------- */
+      .features { display: grid; gap: 56px 20px; }
+      @media (min-width: 768px) { .features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+      @media (min-width: 1024px) { .features { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+      .feature { padding-top: 24px; border-top: 1px solid var(--hairline); }
+      .feature__datum { font-size: clamp(32px, 3vw, 44px); line-height: 1; font-variant-numeric: tabular-nums; }
+      .feature h3 { margin-top: 28px; font-size: 17px; font-weight: 500; color: #1D1D1F; }
+      .feature p:not(.feature__datum) { margin-top: 8px; max-width: 36ch; font-size: 15px; line-height: 1.55; color: #6E6E73; }
+
+      /* ---------- Support ---------- */
+      .service { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; margin-bottom: clamp(64px, 8vw, 112px); padding-block: 32px; border-block: 1px solid var(--hairline); }
+      @media (min-width: 1024px) { .service { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+      .service h3 { font-size: 15px; font-weight: 500; color: #1D1D1F; }
+      .service p { margin-top: 6px; font-size: 14px; line-height: 1.5; color: #6E6E73; }
+      .box-list li { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-top: 1px solid var(--hairline); font-size: 15px; line-height: 1.45; color: #1D1D1F; }
+      .box-list li span { color: #6E6E73; font-variant-numeric: tabular-nums; }
+      .box-list li:last-child { border-bottom: 1px solid var(--hairline); }
+      .faq { border-bottom: 1px solid var(--hairline); }
+      .faq__item { border-top: 1px solid var(--hairline); }
+      .faq__q { display: flex; align-items: center; justify-content: space-between; gap: 24px; width: 100%; padding: 22px 0; text-align: left; font-size: 17px; font-weight: 500; line-height: 1.4; color: #1D1D1F; cursor: pointer; }
+      .faq__icon { position: relative; flex: none; width: 14px; height: 14px; }
+      .faq__icon::before, .faq__icon::after { content: ""; position: absolute; top: 50%; left: 0; width: 14px; height: 1.5px; margin-top: -0.75px; background: currentColor; transition: transform 0.6s var(--ease); }
+      .faq__icon::after { transform: rotate(90deg); }
+      .faq__q[aria-expanded="true"] .faq__icon::after { transform: rotate(0deg); }
+      .faq__panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.6s var(--ease); }
+      .faq__panel > div { overflow: hidden; }
+      .faq__panel p { max-width: 60ch; padding: 0 40px 24px 0; font-size: 16px; line-height: 1.6; color: #6E6E73; }
+      .faq__item.is-open .faq__panel { grid-template-rows: 1fr; }
+      .faq__item:not(.is-open) .faq__panel > div { visibility: hidden; transition: visibility 0s 0.6s; }
+      .footer__wordmark { overflow: hidden; padding-top: clamp(24px, 4vw, 64px); color: #F5F5F7; }
+      .footer__wordmark svg { display: block; width: 100%; height: auto; }
+      .footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 24px; padding-bottom: 32px; font-size: 12px; color: #86868B; }
+
+      /* ---------- Configurator drawer ---------- */
+      .drawer-root { position: fixed; inset: 0; z-index: 90; }
+      .drawer__scrim { position: absolute; inset: 0; background: rgba(29, 29, 31, 0.36); }
+      .drawer { position: absolute; top: 0; right: 0; display: flex; flex-direction: column; width: min(100%, 460px); height: 100%; background: #FFFFFF; box-shadow: -1px 0 0 var(--hairline), -24px 0 64px rgba(0, 0, 0, 0.08); }
+      .drawer__head { flex: none; display: flex; align-items: center; justify-content: space-between; height: 64px; padding: 0 24px; border-bottom: 1px solid var(--hairline); }
+      .drawer__close { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 999px; background: #F5F5F7; color: #1D1D1F; transition: background-color 0.35s var(--ease), transform 0.6s var(--ease); }
+      .drawer__close:active { transform: scale(0.98); }
+      @media (hover: hover) { .drawer__close:hover { background: #E8E8ED; } }
+      .drawer__body { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 24px 24px 32px; }
+      .drawer__preview { padding: 28px 24px 18px; border-radius: 1.5rem; background: #F5F5F7; --body: #D8D9DD; --cushion: #B4B5BB; }
+      .drawer__preview .p-body { fill: var(--body); transition: fill 0.8s var(--ease); }
+      .drawer__preview .p-cushion { fill: var(--cushion); transition: fill 0.8s var(--ease); }
+      .drawer__preview .p-band { stroke: var(--body); transition: stroke 0.8s var(--ease); }
+      .drawer__preview .p-band-in { stroke: var(--cushion); transition: stroke 0.8s var(--ease); }
+      .drawer__caption { display: flex; justify-content: space-between; margin-top: 10px; font-size: 11px; color: #6E6E73; }
+
+      .field { min-width: 0; margin: 28px 0 0; padding: 0; border: 0; }
+      .field__legend { display: flex; justify-content: space-between; align-items: baseline; width: 100%; margin-bottom: 12px; padding: 0; font-size: 13px; font-weight: 500; color: #1D1D1F; }
+      .field__legend span + span { font-weight: 400; color: #6E6E73; }
+      .field__label { display: block; margin-bottom: 10px; font-size: 13px; font-weight: 500; color: #1D1D1F; }
+      .field__error { margin-top: 8px; font-size: 13px; color: #B42318; }
+
+      .swatches { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+      .swatch { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px 8px 14px; border-radius: 16px; text-align: center; cursor: pointer; box-shadow: inset 0 0 0 1px var(--hairline); transition: box-shadow 0.4s var(--ease), transform 0.6s var(--ease); }
+      .swatch:active { transform: scale(0.98); }
+      .swatch__chip { width: 28px; height: 28px; border-radius: 999px; background: var(--chip); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -6px 10px rgba(0, 0, 0, 0.08), inset 0 4px 8px rgba(255, 255, 255, 0.35); }
+      .swatch__name { font-size: 12px; line-height: 1.3; color: #1D1D1F; }
+      input:checked + .swatch { box-shadow: inset 0 0 0 1.5px #1D1D1F; }
+      @media (hover: hover) {
+        .swatch:hover { box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.24); }
+        input:checked + .swatch:hover { box-shadow: inset 0 0 0 1.5px #1D1D1F; }
+      }
+
+      .option { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 16px; padding: 16px; border-radius: 16px; cursor: pointer; box-shadow: inset 0 0 0 1px var(--hairline); transition: box-shadow 0.4s var(--ease), transform 0.6s var(--ease); }
+      .option:active { transform: scale(0.98); }
+      .option__name { display: block; font-size: 15px; font-weight: 500; color: #1D1D1F; }
+      .option__desc { display: block; margin-top: 4px; font-size: 13px; line-height: 1.45; color: #6E6E73; }
+      .option__price { font-size: 15px; color: #1D1D1F; font-variant-numeric: tabular-nums; }
+      .option__check { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 999px; color: transparent; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2); transition: background-color 0.35s var(--ease), box-shadow 0.35s var(--ease), color 0.35s var(--ease); }
+      input:checked + .option { box-shadow: inset 0 0 0 1.5px #1D1D1F; }
+      input:checked + .option .option__check { background: #1D1D1F; color: #FFFFFF; box-shadow: none; }
+      input:focus-visible + .swatch, input:focus-visible + .option { outline: 2px solid #0066CC; outline-offset: 2px; }
+
+      .input { width: 100%; height: 48px; padding: 0 16px; border-radius: 12px; background: #FFFFFF; color: #1D1D1F; font-size: 15px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.14); transition: box-shadow 0.3s var(--ease); }
+      .input::placeholder { color: #A1A1A6; }
+      .input:focus-visible { outline: none; box-shadow: inset 0 0 0 1.5px #0066CC, 0 0 0 4px rgba(0, 102, 204, 0.14); }
+      .input[aria-invalid="true"] { box-shadow: inset 0 0 0 1.5px #B42318; }
+
+      .summary { margin-top: 28px; font-size: 15px; font-variant-numeric: tabular-nums; }
+      .summary > div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid var(--hairline); }
+      .summary dt { color: #6E6E73; }
+      .summary dd { color: #1D1D1F; }
+      .summary .summary__total dt, .summary .summary__total dd { font-weight: 500; color: #1D1D1F; }
+      .drawer__note { margin-top: 16px; font-size: 13px; line-height: 1.5; color: #6E6E73; }
+      .drawer__success { padding-top: 32px; }
+      .drawer__success:focus { outline: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- SVG sprite: monogram + wordmark (drawn on a 14-unit cap-height grid). -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <clipPath id="km-clip"><rect x="0" y="2" width="22" height="24"/></clipPath>
+      <clipPath id="kw-clip"><rect x="0" y="0" width="74" height="14"/></clipPath>
+    </defs>
+    <symbol id="kinetic-mark" viewBox="0 0 22 28">
+      <g fill="none" stroke="currentColor" stroke-width="2.2" clip-path="url(#km-clip)">
+        <path d="M3 2V26"/>
+        <path d="M3 14L19.99 1.66M3 14L19.99 26.34"/>
+      </g>
+      <g fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M9.29 10.93A7 7 0 0 1 9.29 17.07"/>
+        <path d="M14.24 8.52A12.5 12.5 0 0 1 14.24 19.48"/>
+      </g>
+    </symbol>
+    <symbol id="kinetic-word" viewBox="0 0 74 14">
+      <g fill="none" stroke="currentColor" stroke-width="2" clip-path="url(#kw-clip)">
+        <path d="M1 0V14M1.6 7L10.6 -1.2M1.6 7L10.6 15.2"/>
+        <path d="M15 0V14"/>
+        <path d="M21 0V14M29 0V14M20.5 -0.875L29.5 14.875"/>
+        <path d="M35 0V14M34 1H42M34 7H41M34 13H42"/>
+        <path d="M46 1H55M50.5 0V14"/>
+        <path d="M60 0V14"/>
+        <path d="M72.39 2.4A4.5 6 0 1 0 72.39 11.6"/>
+      </g>
+    </symbol>
+    <!-- Dannebrog, official proportions 28:37 (cross offset 12 | 4 | 21 / 12 | 4 | 12). -->
+    <symbol id="flag-dk" viewBox="0 0 37 28">
+      <rect width="37" height="28" fill="#C8102E"/>
+      <rect x="12" width="4" height="28" fill="#FFFFFF"/>
+      <rect y="12" width="37" height="4" fill="#FFFFFF"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#overview">Skip to content</a>
+
+  <!-- 1. Preloader -->
+  <div id="preloader" class="preloader" role="progressbar" aria-label="Loading KINETIC ONE" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="preloader__inner">
+      <svg class="preloader__mark" viewBox="0 0 22 28" aria-hidden="true"><use href="#kinetic-mark" width="22" height="28"/></svg>
+      <div class="preloader__meter">
+        <div class="preloader__track"><div class="preloader__fill"></div></div>
+        <span class="preloader__count"><span data-count>000</span>%</span>
+      </div>
+    </div>
+    <p class="preloader__label">KINETIC Acoustic Engineering, Copenhagen</p>
+  </div>
+
+  <!-- 1. Navigation -->
+  <header id="nav" class="nav">
+    <div class="nav__bar wrap">
+      <a href="#hero" class="nav__logo" aria-label="KINETIC, back to top">
+        <svg class="h-[20px] w-auto" viewBox="0 0 22 28" aria-hidden="true"><use href="#kinetic-mark" width="22" height="28"/></svg>
+        <svg class="nav__word h-[11px] w-auto" viewBox="0 0 74 14" aria-hidden="true"><use href="#kinetic-word" width="74" height="14"/></svg>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#neural-anc">Neural ANC</a>
+        <a href="#sound">Sound</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#design">Design</a>
+        <a href="#support">Support</a>
+        <a href="#specifications">Specifications</a>
+      </nav>
+      <div class="nav__actions">
+        <button type="button" class="btn btn--sm btn--dark tnum" data-open-configurator>Pre-Order — $549</button>
+        <button type="button" class="nav__menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile / tablet menu (< 1024px) -->
+  <div id="mobile-menu" class="menu" data-lenis-prevent hidden>
+    <nav class="wrap" aria-label="Mobile">
+      <ul class="menu__links">
+        <li><a href="#neural-anc">Neural ANC</a></li>
+        <li><a href="#sound">Sound</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#specifications">Specifications</a></li>
+      </ul>
+    </nav>
+    <div class="menu__foot wrap">
+      <p class="flex items-center gap-2.5">
+        <svg class="flag" viewBox="0 0 37 28" role="img" aria-label="Flag of Denmark"><use href="#flag-dk" width="37" height="28"/></svg>
+        Designed and tuned in Copenhagen, Denmark
+      </p>
+      <button type="button" class="btn btn--lg btn--dark w-full tnum" data-open-configurator>Configure &amp; Reserve — $549</button>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- 2. Hero: 94 frames, 350vh pinned -->
+    <section id="hero" class="hero" aria-label="KINETIC ONE">
+      <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+
+      <div class="story story--1">
+        <div class="story__inner">
+          <p class="micro-label reveal-fade flex items-center gap-2.5">
+            <svg class="flag" viewBox="0 0 37 28" role="img" aria-label="Flag of Denmark"><use href="#flag-dk" width="37" height="28"/></svg>
+            MODEL 01 — COPENHAGEN
+          </p>
+          <h1 class="story__title display">
+            <span class="reveal-line"><span>SILENCE,</span></span>
+            <span class="reveal-line"><span>SCULPTED.</span></span>
+          </h1>
+          <p class="story__sub reveal-fade">Reference-grade wireless acoustic architecture.</p>
+        </div>
+      </div>
+
+      <div class="story story--2">
+        <div class="story__inner">
+          <h2 class="story__heading display">40MM TITANIUM DRIVERS</h2>
+          <p class="story__body">Custom vapor-deposited diaphragms calibrated for &lt;0.05% harmonic distortion.</p>
+        </div>
+      </div>
+
+      <div class="story story--3">
+        <div class="story__inner">
+          <h2 class="story__heading display">K1 ACOUSTIC SILICON</h2>
+          <p class="story__body">Dedicated 8-microphone beamforming array sampling ambient pressure 48,000 times per second.</p>
+        </div>
+      </div>
+
+      <div class="hero__cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="section" aria-labelledby="overview-title">
+      <div class="wrap">
+        <h2 id="overview-title" class="sr-only">Overview</h2>
+        <p class="lead display">KINETIC ONE is a closed-back wireless headphone built around a single idea: remove everything that stands between you and the recording.</p>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-x-5 gap-y-6 mt-[clamp(40px,5vw,72px)]">
+          <p class="overview__p md:col-span-6 lg:col-span-4 lg:col-start-5">Drivers, silicon and frame were designed together, by one team, in one building in Copenhagen. Nothing was sourced off the shelf and adapted to fit.</p>
+          <p class="overview__p md:col-span-6 lg:col-span-4">No logo on the cups. No gloss. No buttons you can see. Titanium, knit and memory foam, assembled so that every part can be replaced.</p>
+        </div>
+        <dl class="stats">
+          <div class="stat"><dt>Peak noise attenuation</dt><dd>&minus;48<span>dB</span></dd></div>
+          <div class="stat"><dt>Harmonic distortion at 1 kHz</dt><dd>&lt;0.05<span>%</span></dd></div>
+          <div class="stat"><dt>Upper frequency limit, from 4 Hz</dt><dd>40<span>kHz</span></dd></div>
+          <div class="stat"><dt>Beamforming microphones</dt><dd>8<span>mics</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 3. Neural ANC simulator -->
+    <section id="neural-anc" class="section" aria-labelledby="anc-title">
+      <div class="wrap">
+        <div class="section-head !mb-0">
+          <h2 id="anc-title" class="display">Hear nothing. Feel everything.</h2>
+          <p>Eight microphones read the air around you 48,000 times a second. K1 builds the inverse waveform and cancels the noise before it reaches your ear.</p>
+        </div>
+
+        <div id="anc-panel" class="anc" data-state="off">
+          <div class="anc__head">
+            <dl class="anc__readouts">
+              <div><dt>Low-Frequency Rumble:</dt><dd data-readout="rumble">85 dB</dd></div>
+              <div><dt>Wind Shear:</dt><dd data-readout="wind">62 dB</dd></div>
+              <div class="anc__att"><dt>Attenuation:</dt><dd data-readout="att">0 dB</dd></div>
+            </dl>
+            <div class="anc__control">
+              <span class="anc__opt" data-set="off">Ambient Environment (ANC Off)</span>
+              <button id="anc-switch" type="button" class="switch" role="switch" aria-checked="false" aria-labelledby="anc-switch-label">
+                <span class="switch__thumb"></span>
+              </button>
+              <span id="anc-switch-label" class="anc__opt" data-set="on">Neural Isolation (ANC On)</span>
+            </div>
+          </div>
+          <div class="anc__plot"><canvas id="anc-canvas" aria-hidden="true"></canvas></div>
+          <div class="anc__foot"><span>0 ms</span><span>Sound pressure at the ear, 20 ms window</span><span>20 ms</span></div>
+          <p id="anc-status" class="sr-only" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sound: measured frequency response with three on-board profiles -->
+    <section id="sound" class="section" aria-labelledby="sound-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="sound-title" class="display">Tuned flat. Then tuned by ear.</h2>
+          <p>Every unit is measured on an ear simulator before it leaves Copenhagen. Three profiles are stored on the headphone, so they follow you to any device.</p>
+        </div>
+
+        <div class="fr">
+          <div class="fr__top">
+            <div class="segmented" role="radiogroup" aria-label="Sound profile">
+              <button type="button" role="radio" aria-checked="true" tabindex="0" data-profile="reference">Reference</button>
+              <button type="button" role="radio" aria-checked="false" tabindex="-1" data-profile="studio">Studio</button>
+              <button type="button" role="radio" aria-checked="false" tabindex="-1" data-profile="transit">Transit</button>
+              <span class="segmented__thumb" aria-hidden="true"></span>
+            </div>
+            <p class="fr__desc" aria-live="polite">Flat to the KINETIC target curve. For mixing, mastering and critical listening.</p>
+          </div>
+
+          <div class="fr__chart">
+            <div class="fr__y" aria-hidden="true">
+              <span style="top:0%">+12</span><span style="top:25%">+6</span><span style="top:50%">0 dB</span><span style="top:75%">&minus;6</span><span style="top:100%">&minus;12</span>
+            </div>
+            <div class="fr__plot">
+              <svg viewBox="0 0 1000 360" preserveAspectRatio="none" aria-hidden="true">
+                <g class="fr__grid"></g>
+                <rect class="fr__band" x="0" y="165" width="1000" height="30"/>
+                <path class="fr__curve" d=""/>
+              </svg>
+            </div>
+            <div></div>
+            <div class="fr__x" aria-hidden="true">
+              <span style="left:0%">20 Hz</span>
+              <span class="is-minor" style="left:13.26%">50</span>
+              <span style="left:23.33%">100</span>
+              <span class="is-minor" style="left:33.33%">200</span>
+              <span class="is-minor" style="left:46.6%">500</span>
+              <span style="left:56.63%">1k</span>
+              <span class="is-minor" style="left:66.7%">2k</span>
+              <span class="is-minor" style="left:79.97%">5k</span>
+              <span class="is-minor" style="left:90%">10k</span>
+              <span style="left:100%">20 kHz</span>
+            </div>
+          </div>
+
+          <div class="fr__foot">
+            <dl class="fr__readouts">
+              <div><dt>Low shelf, 80 Hz:</dt><dd data-fr="low">+0.1 dB</dd></div>
+              <div><dt>Presence, 3 kHz:</dt><dd data-fr="mid">+0.4 dB</dd></div>
+              <div><dt>Air, 12 kHz:</dt><dd data-fr="air">&minus;0.6 dB</dd></div>
+            </dl>
+            <div class="fr__legend">
+              <span><i aria-hidden="true"></i>Measured response</span>
+              <span><i class="is-band" aria-hidden="true"></i>Production tolerance ±1 dB</span>
+            </div>
+          </div>
+          <p class="mt-4 text-[12px] text-muted">IEC 60318-4 ear simulator, 1/12-octave smoothing. Deviation from the KINETIC target.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Acoustic architecture (bento) -->
+    <section id="architecture" class="section" aria-labelledby="arch-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="arch-title" class="display">Acoustic architecture.</h2>
+          <p>Four figures we designed around. Each one measured, not estimated.</p>
+        </div>
+
+        <div class="bento grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 lg:gap-5">
+          <!-- 60 HRS -->
+          <article class="card lg:col-span-7">
+            <p class="card__figure display">60<span class="card__unit">HRS</span></p>
+            <div class="card__viz">
+              <div class="battery">
+                <div class="battery__track" aria-hidden="true"><span class="battery__fill"></span><span class="battery__quick"></span></div>
+                <div class="battery__scale" aria-hidden="true">
+                  <span style="left:0%">0 h</span><span style="left:16.667%">10</span><span style="left:33.333%">20</span><span style="left:50%">30</span><span style="left:66.667%">40</span><span style="left:83.333%">50</span><span style="left:100%">60 h</span>
+                </div>
+                <p class="battery__legend"><i aria-hidden="true"></i>4 h from a 5-minute charge</p>
+              </div>
+            </div>
+            <p class="card__text"><strong>Continuous playback with Neural ANC active.</strong> 5-minute USB-C charge yields 4 hours.</p>
+          </article>
+
+          <!-- 248 GRAMS -->
+          <article class="card lg:col-span-5">
+            <p class="card__figure display">248<span class="card__unit">GRAMS</span></p>
+            <div class="card__viz">
+              <div class="mass">
+                <div class="mass__bar" aria-hidden="true">
+                  <span style="--w:45.16%;--c:#1D1D1F"></span><span style="--w:38.71%;--c:#6E6E73"></span><span style="--w:16.13%;--c:#C7C7CC"></span>
+                </div>
+                <dl class="mass__legend">
+                  <div style="--c:#1D1D1F"><dt>Titanium frame</dt><dd>112 g</dd></div>
+                  <div style="--c:#6E6E73"><dt>Drivers and housings</dt><dd>96 g</dd></div>
+                  <div style="--c:#C7C7CC"><dt>Seals and cushions</dt><dd>40 g</dd></div>
+                </dl>
+              </div>
+            </div>
+            <p class="card__text"><strong>Bead-blasted aerospace titanium frame</strong> with zero-pressure memory foam seals.</p>
+          </article>
+
+          <!-- SPATIAL 360° -->
+          <article class="card card--spatial lg:col-span-5">
+            <p class="card__figure display"><span class="card__unit card__unit--pre">SPATIAL</span>360°</p>
+            <div class="card__viz flex-col justify-center">
+              <svg class="dial" viewBox="0 0 200 200" aria-hidden="true">
+                <g class="dial__ticks"></g>
+                <circle class="dial__ring" cx="100" cy="100" r="60"/>
+                <text class="dial__label" x="100" y="27">0°</text>
+                <text class="dial__label" x="174" y="100">90°</text>
+                <text class="dial__label" x="100" y="173">180°</text>
+                <text class="dial__label" x="26" y="100">270°</text>
+                <g class="dial__marker">
+                  <line class="dial__beam" x1="100" y1="84" x2="100" y2="44"/>
+                  <circle class="dial__source" cx="100" cy="40" r="3.5"/>
+                </g>
+                <circle class="dial__head" cx="100" cy="100" r="15"/>
+                <path class="dial__nose" d="M95.5 86.5 100 81.5 104.5 86.5"/>
+              </svg>
+              <p class="dial__readout">Source azimuth <span data-azimuth>312°</span></p>
+            </div>
+            <p class="card__text"><strong>1000Hz inertial head-tracking sensors</strong> anchor soundstage in physical space.</p>
+          </article>
+
+          <!-- 24-BIT / 192KHZ -->
+          <article class="card lg:col-span-7">
+            <p class="card__figure display">24-BIT<span class="card__unit">/ 192KHZ</span></p>
+            <div class="card__viz">
+              <div class="w-full">
+                <svg class="sampling" viewBox="0 0 600 160" preserveAspectRatio="none" aria-hidden="true">
+                  <line class="sampling__axis" x1="0" y1="80" x2="600" y2="80"/>
+                  <path class="sampling__smooth" d=""/>
+                  <path class="sampling__steps" d=""/>
+                </svg>
+                <div class="sampling__key"><span><i class="is-source"></i>Source signal</span><span><i></i>Sampled output</span></div>
+              </div>
+            </div>
+            <p class="card__text"><strong>Integrated studio DAC</strong> supporting bit-perfect lossless audio over USB-C.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design & materials -->
+    <section id="design" class="section section--mist" aria-labelledby="design-title">
+      <div class="wrap">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-5 gap-y-12 items-center">
+          <figure class="design__media lg:col-span-6">
+            <img src="./public/frames-closing/frame_0082.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="KINETIC ONE in Anodized Graphite resting on a slate plinth, its earcup grille lit by a blue status ring.">
+            <figcaption>KINETIC ONE in Anodized Graphite. Grade-5 titanium yoke and laser-drilled acoustic grille.</figcaption>
+          </figure>
+          <div class="lg:col-span-5 lg:col-start-8">
+            <h2 id="design-title" class="design__title display">Made to be worn for a decade.</h2>
+            <p class="design__lede">We chose materials that age well and parts that can be replaced. Nothing is glued that could be fastened.</p>
+            <dl class="materials">
+              <div><dt>Frame</dt><dd>Grade-5 titanium, milled from a single billet and bead-blasted to a matte finish.</dd></div>
+              <div><dt>Headband</dt><dd>Knit over a stainless memory-alloy spring. 4.2 N of clamping force, spread evenly.</dd></div>
+              <div><dt>Cushions</dt><dd>Slow-recovery memory foam in a breathable knit. Held by magnets, replaced by hand.</dd></div>
+              <div><dt>Controls</dt><dd>One machined crown for volume, one capacitive surface for playback. No visible buttons.</dd></div>
+            </dl>
+            <div class="finish-row">
+              <p>Three finishes. Select one to configure.</p>
+              <div class="finish-row__items">
+                <button type="button" class="finish-chip" data-open-configurator data-finish="silver"><span class="swatch__chip" style="--chip:#D8D9DD"></span>Silver Titanium</button>
+                <button type="button" class="finish-chip" data-open-configurator data-finish="graphite"><span class="swatch__chip" style="--chip:#2C2C2E"></span>Anodized Graphite</button>
+                <button type="button" class="finish-chip" data-open-configurator data-finish="sand"><span class="swatch__chip" style="--chip:#DFD7CD"></span>Nordic Sand</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Everyday use -->
+    <section id="everyday" class="section" aria-labelledby="everyday-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="everyday-title" class="display">Built for the whole day.</h2>
+          <p>The details you notice on day one hundred, not day one.</p>
+        </div>
+        <ul class="features">
+          <li class="feature">
+            <p class="feature__datum display">2<span class="text-muted text-[0.45em] ml-1 tracking-normal">devices</span></p>
+            <h3>Multipoint</h3>
+            <p>Stays connected to your laptop and your phone at the same time. A call takes over from music automatically.</p>
+          </li>
+          <li class="feature">
+            <p class="feature__datum display">0.3<span class="text-muted text-[0.45em] ml-1 tracking-normal">s</span></p>
+            <h3>Wear detection</h3>
+            <p>Optical sensors pause playback when you lift a cup and resume within 0.3 seconds when it returns.</p>
+          </li>
+          <li class="feature">
+            <p class="feature__datum display">38<span class="text-muted text-[0.45em] ml-1 tracking-normal">mm</span></p>
+            <h3>Folds flat</h3>
+            <p>The cups rotate 90° and lie flat. 38 mm thick in the travel case, small enough for a laptop sleeve.</p>
+          </li>
+          <li class="feature">
+            <p class="feature__datum display">4<span class="text-muted text-[0.45em] ml-1 tracking-normal">mics</span></p>
+            <h3>Voice pickup</h3>
+            <p>Four of the eight microphones form a beam toward your mouth. Wind is removed before your voice leaves the headphone.</p>
+          </li>
+          <li class="feature">
+            <p class="feature__datum display">USB-C</p>
+            <h3>Wired lossless</h3>
+            <p>Listen at 24-bit / 192 kHz over USB-C while it charges. No adapter needed for a computer.</p>
+          </li>
+          <li class="feature">
+            <p class="feature__datum display">5<span class="text-muted text-[0.45em] ml-1 tracking-normal">years</span></p>
+            <h3>Firmware support</h3>
+            <p>Updates install over Bluetooth. Every unit receives feature updates for at least five years.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Support: service, box contents, FAQ -->
+    <section id="support" class="section" aria-labelledby="support-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="support-title" class="display">Before you reserve.</h2>
+          <p>Reserving is free and holds your place in line. You pay when your unit is ready to ship.</p>
+        </div>
+
+        <ul class="service">
+          <li><h3>Free delivery</h3><p>Across the EU, the United Kingdom and Norway.</p></li>
+          <li><h3>30-day returns</h3><p>Counted from the day it arrives.</p></li>
+          <li><h3>2-year warranty</h3><p>Extendable to five years when you order.</p></li>
+          <li><h3>Repairable by design</h3><p>Cushions, headband and battery can all be replaced.</p></li>
+        </ul>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-5 gap-y-16">
+          <div id="in-the-box" class="lg:col-span-4">
+            <h3 class="sub-title">In the box</h3>
+            <ul class="box-list">
+              <li>KINETIC ONE headphones<span>1</span></li>
+              <li>Soft travel sleeve<span>1</span></li>
+              <li>USB-C cable, 1.2 m, braided<span>1</span></li>
+              <li>USB-C to 3.5 mm analog adapter<span>1</span></li>
+              <li>Quick start guide<span>1</span></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-7 lg:col-start-6">
+            <h3 class="sub-title">Questions</h3>
+            <div class="faq">
+              <div class="faq__item">
+                <h4><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-1">When will my KINETIC ONE ship?<span class="faq__icon" aria-hidden="true"></span></button></h4>
+                <div id="faq-1" class="faq__panel" role="region"><div><p>Reservations made today ship from March 2027, in the order they were placed. We confirm your delivery week by email two weeks before dispatch.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h4><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-2">Do I pay when I reserve?<span class="faq__icon" aria-hidden="true"></span></button></h4>
+                <div id="faq-2" class="faq__panel" role="region"><div><p>No. A reservation holds your place and your configuration. Payment is taken when your unit is ready to ship, and you can cancel at any point before then.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h4><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-3">Does it work with iPhone, Android and computers?<span class="faq__icon" aria-hidden="true"></span></button></h4>
+                <div id="faq-3" class="faq__panel" role="region"><div><p>Yes. KINETIC ONE connects over Bluetooth 5.4 with AAC and LC3, and works as a standard USB audio device on macOS, Windows, Linux, iOS and Android.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h4><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-4">Can I replace the ear cushions?<span class="faq__icon" aria-hidden="true"></span></button></h4>
+                <div id="faq-4" class="faq__panel" role="region"><div><p>Yes. The cushions are held by magnets and lift off by hand. Replacement sets are available in all three finishes.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h4><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-5">What does the warranty cover?<span class="faq__icon" aria-hidden="true"></span></button></h4>
+                <div id="faq-5" class="faq__panel" role="region"><div><p>Two years against manufacturing defects, worldwide. Battery replacement is offered for the life of the product at a fixed service price.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h4><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-6">Can I listen while it charges?<span class="faq__icon" aria-hidden="true"></span></button></h4>
+                <div id="faq-6" class="faq__panel" role="region"><div><p>Yes. Over USB-C you can charge, listen and play lossless audio at the same time.</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Closing: 94 frames, 300vh pinned -->
+    <section id="closing" class="closing on-dark" aria-label="KINETIC ONE, designed in Copenhagen">
+      <canvas id="closing-canvas" class="closing__canvas" aria-hidden="true"></canvas>
+      <div class="closing__shade" aria-hidden="true"></div>
+
+      <div class="story story--a">
+        <div class="story__inner">
+          <h2 class="closing__heading display">DESIGNED IN COPENHAGEN.</h2>
+          <p class="closing__sub">Milled from a single billet of grade-5 titanium.</p>
+        </div>
+      </div>
+
+      <div class="story story--b">
+        <div class="story__inner">
+          <p class="closing__title display">KINETIC ONE</p>
+          <button type="button" class="btn btn--lg btn--light mt-8 tnum" data-open-configurator>Configure &amp; Reserve — $549</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Footer -->
+  <footer id="footer" class="footer on-dark">
+    <div class="wrap">
+      <section id="specifications" class="specs" aria-labelledby="specs-title">
+        <div class="grid grid-cols-12 gap-x-5 gap-y-10">
+          <div class="col-span-12 lg:col-span-4">
+            <h2 id="specs-title" class="display text-[clamp(36px,4vw,64px)] text-white">Specifications</h2>
+            <p class="mt-5 max-w-[30ch] text-[15px] leading-relaxed text-dim">Measured in our anechoic chamber in Copenhagen. Values are typical.</p>
+          </div>
+          <dl class="specs__list col-span-12 lg:col-span-8">
+            <div class="specs__row"><dt>Driver</dt><dd>40 mm titanium, vapor-deposited diaphragm</dd></div>
+            <div class="specs__row"><dt>Frequency response</dt><dd>4 Hz – 40 kHz</dd></div>
+            <div class="specs__row"><dt>Harmonic distortion</dt><dd>&lt; 0.05% at 1 kHz, 94 dB SPL</dd></div>
+            <div class="specs__row"><dt>Noise cancellation</dt><dd>Neural ANC, 8-microphone beamforming. Up to −48 dB.</dd></div>
+            <div class="specs__row"><dt>Ambient sampling</dt><dd>48,000 times per second</dd></div>
+            <div class="specs__row"><dt>Battery</dt><dd>60 h with ANC on. 4 h from a 5-minute charge.</dd></div>
+            <div class="specs__row"><dt>Weight</dt><dd>248 g</dd></div>
+            <div class="specs__row"><dt>Frame</dt><dd>Bead-blasted grade-5 titanium</dd></div>
+            <div class="specs__row"><dt>Head tracking</dt><dd>1000 Hz inertial sensors</dd></div>
+            <div class="specs__row"><dt>Audio</dt><dd>24-bit / 192 kHz over USB-C. Bluetooth 5.4 with LE Audio.</dd></div>
+            <div class="specs__row"><dt>Finishes</dt><dd>Silver Titanium, Anodized Graphite, Nordic Sand</dd></div>
+            <div class="specs__row"><dt>Price</dt><dd>$549</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <div class="footer__meta">
+        <div class="flex items-start gap-3 text-[#F5F5F7]">
+          <svg class="h-[22px] w-auto mt-[2px]" viewBox="0 0 22 28" aria-hidden="true"><use href="#kinetic-mark" width="22" height="28"/></svg>
+          <p>KINETIC Acoustic Engineering<br><span class="text-dim">Headphones, designed and tuned in-house.<br>Model 01, reservations open.</span></p>
+        </div>
+        <nav aria-label="Product">
+          <p class="footer__head">Product</p>
+          <ul class="footer__links">
+            <li><a href="#neural-anc">Neural ANC</a></li>
+            <li><a href="#sound">Sound</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#specifications">Specifications</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Support">
+          <p class="footer__head">Support</p>
+          <ul class="footer__links">
+            <li><a href="#support">Questions</a></li>
+            <li><a href="#in-the-box">In the box</a></li>
+            <li><a href="#everyday">Everyday use</a></li>
+            <li><button type="button" data-open-configurator>Reserve</button></li>
+          </ul>
+        </nav>
+        <address class="not-italic">
+          <p class="footer__head">Studio</p>
+          <span class="flex items-center gap-2.5 text-[#F5F5F7]">
+            <svg class="flag" viewBox="0 0 37 28" role="img" aria-label="Flag of Denmark"><use href="#flag-dk" width="37" height="28"/></svg>
+            Copenhagen, Denmark
+          </span>
+          <span class="tnum">55.6761° N, 12.5683° E</span>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__wordmark" aria-hidden="true">
+      <svg viewBox="0 0 74 14"><use href="#kinetic-word" width="74" height="14"/></svg>
+    </div>
+
+    <div class="wrap footer__legal">
+      <p>© 2026 KINETIC Acoustic Engineering ApS</p>
+      <p>Portfolio study. Site by <span class="text-[#F5F5F7]">Dev. Jhosue Tortolero</span> by <span class="text-[#F5F5F7]">Jhosuelabs</span></p>
+    </div>
+  </footer>
+
+  <!-- 6. Configurator drawer -->
+  <div id="configurator" class="drawer-root" hidden>
+    <div class="drawer__scrim" data-close-configurator></div>
+    <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" data-lenis-prevent>
+      <div class="drawer__head">
+        <h2 id="drawer-title" class="display text-[20px] tracking-[-0.02em] leading-none">Configure KINETIC ONE</h2>
+        <button type="button" class="drawer__close" aria-label="Close configurator" data-close-configurator>
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 1l10 10M11 1 1 11" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </button>
+      </div>
+
+      <div class="drawer__body">
+        <div class="drawer__preview">
+          <svg viewBox="0 0 320 230" class="block w-full h-auto" aria-hidden="true">
+            <ellipse cx="160" cy="222" rx="118" ry="3.5" fill="rgba(0,0,0,0.07)"/>
+            <path class="p-band" d="M64 150V112C64 56 108 24 160 24S256 56 256 112V150" fill="none" stroke-width="14" stroke-linecap="round"/>
+            <path class="p-band-in" d="M80 112C80 66 116 40 160 40S240 66 240 112" fill="none" stroke-width="5" stroke-linecap="round"/>
+            <rect class="p-body" x="36" y="126" width="56" height="88" rx="26"/>
+            <rect class="p-body" x="228" y="126" width="56" height="88" rx="26"/>
+            <rect class="p-cushion" x="90" y="134" width="16" height="72" rx="8"/>
+            <rect class="p-cushion" x="214" y="134" width="16" height="72" rx="8"/>
+            <rect x="36.5" y="126.5" width="55" height="87" rx="25.5" fill="none" stroke="rgba(0,0,0,0.08)"/>
+            <rect x="228.5" y="126.5" width="55" height="87" rx="25.5" fill="none" stroke="rgba(0,0,0,0.08)"/>
+            <circle cx="266" cy="198" r="1.8" fill="#0066CC"/>
+          </svg>
+          <div class="drawer__caption"><span>Front elevation</span><span>Not to scale</span></div>
+        </div>
+
+        <form id="reserve-form" novalidate>
+          <fieldset class="field">
+            <legend class="field__legend"><span>Finish</span><span data-finish-name aria-hidden="true">Silver Titanium</span></legend>
+            <div class="swatches">
+              <div>
+                <input class="sr-only" type="radio" name="finish" id="finish-silver" value="silver" checked>
+                <label class="swatch" for="finish-silver"><span class="swatch__chip" style="--chip:#D8D9DD"></span><span class="swatch__name">Silver Titanium</span></label>
+              </div>
+              <div>
+                <input class="sr-only" type="radio" name="finish" id="finish-graphite" value="graphite">
+                <label class="swatch" for="finish-graphite"><span class="swatch__chip" style="--chip:#2C2C2E"></span><span class="swatch__name">Anodized Graphite</span></label>
+              </div>
+              <div>
+                <input class="sr-only" type="radio" name="finish" id="finish-sand" value="sand">
+                <label class="swatch" for="finish-sand"><span class="swatch__chip" style="--chip:#DFD7CD"></span><span class="swatch__name">Nordic Sand</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend class="field__legend"><span>Accessory</span></legend>
+            <input class="sr-only" type="checkbox" name="case" id="opt-case">
+            <label class="option" for="opt-case">
+              <span>
+                <span class="option__name">Molded Travel Case</span>
+                <span class="option__desc">Compression-molded shell with a magnetic closure. Holds the headphones flat.</span>
+              </span>
+              <span class="option__price">+$49</span>
+              <span class="option__check" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8"><path d="M1 4l2.6 2.6L9 1.2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg></span>
+            </label>
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="reserve-email">Email for confirmation</label>
+            <input class="input" id="reserve-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="name@domain.com" required aria-describedby="reserve-email-error">
+            <p id="reserve-email-error" class="field__error" hidden>Enter a valid email address to receive your confirmation.</p>
+          </div>
+
+          <dl class="summary">
+            <div><dt>KINETIC ONE, <span data-finish-name>Silver Titanium</span></dt><dd>$549</dd></div>
+            <div data-case-line hidden><dt>Molded Travel Case</dt><dd>$49</dd></div>
+            <div class="summary__total"><dt>Total</dt><dd data-total>$549</dd></div>
+          </dl>
+
+          <button type="submit" class="btn btn--lg btn--dark w-full mt-6 tnum" data-reserve-label>Reserve — $549</button>
+          <p class="drawer__note">Reservations ship from March 2027. Nothing is charged until your unit is ready.</p>
+        </form>
+
+        <div class="drawer__success" tabindex="-1" hidden>
+          <h3 class="display text-[40px]">Reserved.</h3>
+          <p class="mt-4 text-[15px] leading-relaxed">KINETIC ONE in <span data-s-finish></span><span data-s-case></span>. Total <span class="tnum" data-s-total></span>.</p>
+          <p class="mt-2 text-[15px] leading-relaxed text-muted">Reference <span class="tnum text-ink" data-s-ref></span>. Confirmation sent to <span class="text-ink" data-s-email></span>.</p>
+          <p class="drawer__note">Portfolio study. No order was placed and nothing was charged.</p>
+          <div class="flex gap-3 mt-8">
+            <button type="button" class="btn btn--dark" data-close-configurator>Done</button>
+            <button type="button" class="btn btn--ghost" data-reset-configurator>Change configuration</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
