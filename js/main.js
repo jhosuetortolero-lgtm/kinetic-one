@@ -327,6 +327,7 @@ const CLOSING_TOTAL_FRAMES = 94;
         start: 'top top',
         end: () => `+=${Math.round(window.innerHeight * HERO_SCRUB_VH)}`,
         pin: true,
+        anticipatePin: 1, // native touch scrolling runs ahead of JS; avoids a jump at the pin edges
         scrub: REDUCED ? true : 0.5,
         onLeave: loadClosingFrames,
       },
@@ -364,6 +365,7 @@ const CLOSING_TOTAL_FRAMES = 94;
         start: 'top top',
         end: () => `+=${Math.round(window.innerHeight * CLOSING_SCRUB_VH)}`,
         pin: true,
+        anticipatePin: 1,
         scrub: REDUCED ? true : 0.5,
         onEnter: loadClosingFrames,
         onEnterBack: loadClosingFrames,
@@ -927,14 +929,18 @@ const CLOSING_TOTAL_FRAMES = 94;
       return { finish, withCase, total: BASE + (withCase ? CASE : 0) };
     }
 
+    // Write only real changes. On touch devices, WebKit drops the click when the
+    // tapped button's text node is replaced mid-tap (blur -> change -> sync).
+    const setText = (el, text) => { if (el.textContent !== text) el.textContent = text; };
+
     function sync() {
       const { finish, withCase, total } = current();
       preview.style.setProperty('--body', finish.body);
       preview.style.setProperty('--cushion', finish.cushion);
-      finishNames.forEach((el) => { el.textContent = finish.name; });
-      caseLine.hidden = !withCase;
-      totals.forEach((el) => { el.textContent = money(total); });
-      reserveLabel.textContent = `Reserve — ${money(total)}`;
+      finishNames.forEach((el) => setText(el, finish.name));
+      if (caseLine.hidden !== !withCase) caseLine.hidden = !withCase;
+      totals.forEach((el) => setText(el, money(total)));
+      setText(reserveLabel, `Reserve — ${money(total)}`);
     }
 
     function open(event) {
@@ -1000,7 +1006,9 @@ const CLOSING_TOTAL_FRAMES = 94;
       else email.removeAttribute('aria-invalid');
     }
 
-    form.addEventListener('change', sync);
+    // The email field has nothing to sync; its change event fires on blur, which on a
+    // phone is the same tap that hits Reserve.
+    form.addEventListener('change', (event) => { if (event.target !== email) sync(); });
     email.addEventListener('input', () => {
       if (email.hasAttribute('aria-invalid') && email.checkValidity()) showError(false);
     });
